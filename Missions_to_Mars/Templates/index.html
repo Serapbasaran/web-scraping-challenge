@@ -39,23 +39,23 @@
                 <!-- JPL Mars Space Images -->
                 <div class="col-md-6" id="feat-img">
                         <h2>JPL Mars Space Image</h2>
-                        <img src="{{ mars.featured_image_url }}" class="img-fluid p-2" alt="JPL Mars Space Image">
+                        <img src="{{ mars.featured_image_url }}" class="img-thumbnail" alt="Latest Featured Image">
                       </div>   <!-- ending JPL Mars Space Image --> 
                       
 
 
-                 <!-- Mars Facts -->
-                <div class="col-md-12 mt-4" id="mars-facts">
-                        <div class="card border-secondary">
-                            <div class="card-body">
-                                <h4 class="card-title">Mars Facts</h4>
-                                <p class="card-text">{{ mars.mars_facts | safe }}</p>
-                            </div>  <!-- div ending card body-->
-                        </div>   <!-- div ending card border secondary-->
-                    </div>   <!-- div ending Mars Facts -->
-                </div>    <!-- div ending right column -->
-            </div>   <!-- div ending second row -->
-
+                                     <!-- Mars Facts -->
+                                     <div class="col-md-6" id="mars-facts">
+                                        <div class="card border-secondary">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Mars Facts</h4>
+                                                <p class="card-text">{{ mars.facts_html_table | safe }}</p>
+                                            </div>  <!-- div ending card body-->
+                                        </div>   <!-- div ending card border secondary-->
+                                    </div>   <!-- div ending Mars Facts -->
+                                </div>    <!-- div ending right column -->
+                            </div>   <!-- div ending second row -->
+                
             <!-- third row -->
             <div class="row justify-content-center">
       
