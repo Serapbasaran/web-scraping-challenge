@@ -70,7 +70,7 @@ def scrape() :
     facts_df = tables[0]
     
     # Convert the mars facts dataframe into a html table
-    facts_html_table = facts_df.to_html()
+    facts_html_table = facts_df.to_html(header=False, index=False)
 
     # Strip unwanted newlines to clean up the table
     facts_html_table = facts_html_table.replace('\n', '')
